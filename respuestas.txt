@@ -1,0 +1,73 @@
+1. 1 2 3 4 5 6 7 8 9 10
+
+2. 7 5 10
+
+3. T
+   L
+   T
+
+4. 4
+
+5. Da error porque los punteros apuntan a diferentes tipos de dato. c es char y p es double.
+
+6. 
+
+void swap(int* x, int* y){
+  int temp = *x;
+  *x = *y;
+  *y = temp;
+}
+
+int main(){
+
+int a6 = 1, b6 = 5;
+int *pa6 = &a6, *pb6 = &b6;
+
+swap(pa6, pb6);
+cout<<a6<<" "<<b6;
+
+return 0;
+}
+
+7. 2 8
+
+8. 0
+   8
+
+9. 8
+   15
+
+10. 8
+
+11. 
+
+int a11 = 21, *ptr11 = &a;
+cout<<a11<<" "<<&a<<" "<<ptr11;
+
+output: 21 0x7fff52d015d0 0x7fff52d015f0
+
+12. 13 13 13
+
+13. 5 10 7
+
+14. 4 1
+
+15. 
+
+int a15 = 2, b15 = 5, *pta15 = &a15, *ptb15 = &b15, c15 = 0;
+
+c15 = *pta15 + *ptb15;
+
+cout<<c15<<endl;
+
+output: 7
+
+16. 19
+
+17. Segmentation fault.
+
+18. 18
+
+19. La funcion corta todo lo que este despues del ultimo espacio en el string. (El primero que encuentre desde atras.
+
+20. La funcion cambia todas las comas por espacios.
